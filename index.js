@@ -1,11 +1,11 @@
-const mysql = require('mysql2/promise');
+import mysql from 'mysql2/promise';
 
-// TODO: read from config:
-const HOST = 'localhost'; // = process.env.MEMSQL_HOST;
-const PORT = 3306; // = process.env.MEMSQL_PORT || 3306;
-const USER = 'root'; // = process.env.MEMSQL_USER;
-const PASSWORD = ''; // = process.env.MEMSQL_PASSWORD;
-const DATABASE = 'acme'; // = process.env.MEMSQL_DATABASE;
+// TODO: adjust these connection details to match your SingleStore deployment:
+const HOST = 'localhost';
+const PORT = 3306;
+const USER = 'root';
+const PASSWORD = 'password_here';
+const DATABASE = 'acme';
 
 // main is run at the end
 async function main() {
